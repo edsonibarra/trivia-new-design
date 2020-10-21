@@ -1,50 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="styles-index.css">
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-	<title>Playing on TriviApp</title>
+	<link rel="stylesheet" type="text/css" href="styles_home.css">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<title>TriviApp - Home</title>
 </head>
 <body>
-	<nav class="nav">
-		<div class="nav-container">
-			<span class="logo-text">TRIVIAPP!!</span>
-			<span class="help-text">HELP</span>
-		</div>
-	</nav>
-	<div class="outter-container container" id="outter-container">
-		<!-- <div class="questionsContainerApi" id="questionsContainerApi"></div> -->
-		<form id="questionsContainerApi-2" onsubmit="event.preventDefault()">
-		</form>
-		<div class="container containerForQuestion" id="container">
-			<div class="title-container">
-				<h1 class="title-text">Filters</h1>
-			</div>
-			<div class="Filters-container container">
-				<form class="filters-form" onsubmit="event.preventDefault(), writeOutQuestions()">
-					<label>Select a category</label>
-					<select id="category-select" required="">
-						<option>Any Category</option>
-					</select>
-					<label>Number Of Questions</label>
-					<select id="number-select" required="">
-						<option>Any Number</option>
-					</select>
-					<label>Select Difficulty</label>
-					<select id="difficulty-select" required="">
-						<option>Any Difficulty</option>
-					</select>
-					<label>Select Type</label>
-					<select id="type-select" required="">
-						<option>Any Type</option>
-					</select>
-					<input type="submit" name="Get Questions" id="submit-button">
-				</form>
-			</div>
+	<div class="container">
+		<div class="welcome-container">
+			<h1 id="title-text">Welcome to TriviApp!</h1>
+			<a href="#" onclick="delayUrlLoad('home-filters.html', 1000);return false;">Play</a>
+			<a href="highscores.html">Highscores<i class="fas fa-crown"></i></a>
 		</div>
 	</div>
-	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="home.js"></script>
 </body>
 </html>

@@ -44,7 +44,7 @@ writeOutQuestions = () => {
 	if(arrFilterValues.includes("Any Number") || arrFilterValues.includes("Any Category")||arrFilterValues.includes("Any Difficulty")||arrFilterValues.includes("Any Type")){
 		alert('Select All the Filters');
 		let blank_spaceAlert = document.getElementById('outter-container');
-		blank_spaceAlert.innerHTML = `<a class = "search-again-btn" href="home.html">Try Again</a>`
+		blank_spaceAlert.innerHTML = `<a class = "search-again-btn" href="index.html">Try Again</a>`
 	}
 	console.log(arrFilterValues);
 	let blank_space = document.getElementById('container');
@@ -58,7 +58,7 @@ writeOutQuestions = () => {
 			if(questions.response_code === 1) {
 				let blank_space11 = document.getElementById('outter-container');
 				blank_space11.innerHTML = '';
-				const warnResponse = `<h2>The API doesn't have enough questions for your query</h2><div class="padding-30"><a href="home.html" class="search-again-btn">Search Again</a></div>`;
+				const warnResponse = `<h2>The API doesn't have enough questions for your query</h2><div class="padding-30"><a href="index.html" class="search-again-btn">Search Again</a></div>`;
 				blank_space11.innerHTML = warnResponse;
 			}
 			let correctsAnswers = [];
@@ -142,11 +142,11 @@ getValuesSelected = (arr) => {
 			outterCont.innerHTML += `<h1>Congratulations!!</h1>`
 			outterCont.innerHTML += `<h1>You've Reach The Maximum Points</h1>`
 			outterCont.innerHTML += `<h1>Your Score is: ${score} out of ${score}</h1>`
-			outterCont.innerHTML += `<a class = "search-again-btn" href="home.html">Try Again</a>`
+			outterCont.innerHTML += `<a class = "search-again-btn" href="index.html">Try Again</a>`
 		}else {
 			outterCont.innerHTML = "";
 			outterCont.innerHTML += `<h1>Your Score is: ${score} out of ${correctsAf.length*10}</h1>`
-			outterCont.innerHTML += `<a class = "search-again-btn" href="home.html">Try Again</a>`
+			outterCont.innerHTML += `<a class = "search-again-btn" href="index.html">Try Again</a>`
 		}
 	}
 
