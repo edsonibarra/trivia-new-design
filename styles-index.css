@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+label {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1.5rem;
+	font-size: 1.3rem;
+}
+select {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 1.5rem;
+}
+h1 {
+	margin-bottom: 4rem;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 0.35rem;
+}
+.nav {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 2rem;
+}
+.nav-container {
+	display: flex;
+	justify-content: space-between;
+	background-color: #040d15;
+	padding: 8px;
+}
+.nav-container > span {
+	border: solid 1px white;
+	padding: 1rem;
+	color: white;
+	transition: 500ms;
+}
+.nav-container > span:hover {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+}
+.outter-container {
+	height: 100vh;
+	padding: 20px 0 0 0;
+}
+.filters-form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 50%;
+}
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+#submit-button {
+	border: none;
+	border-radius: 6px;
+	padding: 10px;
+	background-color: black;
+	color: white;
+	margin-bottom: 10rem;
+}
+#submit-button:hover {
+	cursor: pointer;
+}
+.text-cap {
+	text-transform: capitalize;
+}
+.text-align {
+	text-align: center;
+}
+.questionsTitle {
+	color: blue;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.question-title-container {
+	margin-top: 1rem;
+}
+
+#questionsContainerApi {
+	width: 70vw;
+	height: 100vh;
+	/*background-color: red;*/
+}
+.search-again-btn {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: black;
+    border: solid 2px;
+    padding: 1rem;
+}
+.search-again-btn:hover{
+	background-color: black;
+	color: white;
+}
+.padding-30 {
+	margin-bottom: 50px;
+	padding: 30px;
+}
+#questionsContainerApi > label {
+	display: inline;
+}
+#questionsContainerApi > input {
+	display: inline;
+}
+
+#questionsContainerApi-2 {
+	width: 50%;
+	height: 100vh;
+}
+#questionsContainerApi-2 >label {
+	display: inline;
+}
+#questionsContainerApi-2> input {
+	display: inline;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.mb-20 {
+	font-family: 'Montserrat', sans-serif;
+	margin-bottom: 20px;
+}
+.submit-btn-form{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    color: black;
+    border: solid 2px;
+    padding: 1rem;
+}
+.submit-btn-form:hover {
+	background-color: black;
+	color: white;
+}
+.filters-form > select{
+	padding: 12px;
+	width: 100%;
+}
+.filters-form > label{
+	width: 100%;
+}
